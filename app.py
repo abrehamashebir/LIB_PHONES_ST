@@ -145,4 +145,28 @@ if uploaded_file is not None:
 
     except Exception as e:
         st.error(f"Error processing file: {str(e)}")
+
+# Footer
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    </style>
+    <div class="footer">
+        <p>© 2024  LIB phone Clearing and Formating. </p>
+        <p><a href="https://github.com/abrehamashebir" target="_blank">GitHub</a> | <a href="https://linkedin/in/abreham-ashebir" target="_blank">Linkedin</a></p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
     
