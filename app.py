@@ -163,7 +163,7 @@ st.markdown(
     </style>
     <div class="footer">
         <p>© 2024  LIB phone Clearing and Formating - by Abreham Ashebir </p>
-        <p><a href="hhttps://anbesabank.com/" target="_blank">Anbesa Bank</a> | <a href="https://www.linkedin.com/company/lion-international-bank-s-c/posts/?feedView=all" target="_blank">Linkedin</a></p>
+        <p><a href="https://anbesabank.com/" target="_blank">Anbesa Bank</a> | <a href="https://www.linkedin.com/company/lion-international-bank-s-c/posts/?feedView=all" target="_blank">Linkedin</a></p>
     </div>
     """,
     unsafe_allow_html=True,
