@@ -15,15 +15,16 @@ st.markdown(
     <style>
     .stMain {
     position:fixed;
+    width:900px;
     }
     .gdg-s1dgczr6{
-    width: 600px;
+    width:900px;
     background-color:blue
 
     }
     .st-emotion-cache-1wmy9hl{
     position:fixed;
-    width: 600px;
+    width:900px;
     
     }
     .gdg-s1dgczr6{
@@ -53,7 +54,7 @@ st.markdown(
             background-color: powderblue;
             padding: 10px;
              position: relative;
-             width:1300px;
+             width:900px;
         }
         .nb {
             color: brown;
