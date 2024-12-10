@@ -17,7 +17,7 @@ st.markdown(
     position:fixed;
     }
     .gdg-s1dgczr6{
-    width: 300px;
+    width: 600px;
     background-color:blue
 
     }
