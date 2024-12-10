@@ -13,9 +13,6 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 st.markdown(
     """
     <style>
-    .stElementContainer {
-    position:fixed
-    }
     .gdg-s1dgczr6{
     width: 300px;
     background-color:blue
