@@ -46,8 +46,9 @@ st.markdown(
     }
         .container {
         background-color:#B0C4DE;    
-        display: flex; /* Use flexbox for alignment */
-        align-items: center; /* Vertically align items */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Vertically align items */
+            position:fixed;
         }
         @media (max-width: 767px) {
     .header {
