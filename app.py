@@ -29,6 +29,7 @@ st.markdown(
         .content {
             background-color: powderblue;
             padding: 20px;
+             position: relative;
             top: 15;
         }
         .nb {
@@ -36,6 +37,7 @@ st.markdown(
             margin-bottom: 10px;
         }
         .banner {
+        position: fixed;
         left: 0;
         bottom: 5;
         width: 100%;
@@ -44,15 +46,8 @@ st.markdown(
         padding: 10px;
         font-size: 14px;
     }
-    .gdg-s1dgczr6 .dvn-scroller {
-    overflow: var(--s1dgczr6-0);
-    transform: translateZ(0);
-}
         .container {
-        background-color:#B0C4DE;    
-            display: flex; /* Use flexbox for alignment */
-            align-items: center; /* Vertically align items */
-            position:fixed;
+        
         }
         @media (max-width: 767px) {
     .header {
@@ -120,7 +115,7 @@ except Exception as e:
 
 # --- Content ---
 st.markdown(
-    """  <br/>
+    """  <br/><br/><br/>
     <div class="content">
         <p class="nb">NB. : ፋይል አፕሎድ(Upload) ከማድረግዎ በፊት የስልክ ቁጥር የያዘውን አምድ(Column) ወደ phone ቀይረው ሴቭ(Save) ማድረግዎን እንዳይረሱ።:</p>
         """,
@@ -128,7 +123,7 @@ st.markdown(
 )
 
 
-uploaded_file = st.file_uploader("Choose an Excel (.xlsx, .xls) or CSV (.csv) file", type=["xlsx", "xls", "csv"], label_visibility='hidden')
+uploaded_file = st.file_uploader("Choose an Excel (.xlsx, .xls) or CSV (.csv) file", type=["xlsx", "xls", "csv"])
 
 if uploaded_file is not None:
     try:
@@ -161,6 +156,8 @@ if uploaded_file is not None:
         df.dropna(axis=1,inplace=True)
         # df = df[['phone']]
 
+
+        st.success("File processed successfully!")
         st.dataframe(df)     
          # Create an in-memory buffer to store the Excel file
         buffer = io.BytesIO()
