@@ -36,7 +36,6 @@ st.markdown(
             margin-bottom: 10px;
         }
         .banner {
-        position: fixed;
         left: 0;
         bottom: 5;
         width: 100%;
@@ -46,9 +45,9 @@ st.markdown(
         font-size: 14px;
     }
         .container {
-        background-color:#B0C4DE;
-        
-        position: fixed;
+        background-color:#B0C4DE;    
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Vertically align items */
         }
         @media (max-width: 767px) {
     .header {
