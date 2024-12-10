@@ -36,8 +36,6 @@ st.markdown(
             margin-bottom: 10px;
         }
         .container {
-            display: flex; /* Use flexbox for alignment */
-            align-items: center; /* Vertically align items */
         }
         @media (max-width: 767px) {
     .header {
