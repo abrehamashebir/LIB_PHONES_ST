@@ -16,7 +16,6 @@ st.markdown(
         .header {
             background-color: #00BFFF;
             color: white;
-            padding: 1px; /* Reduced padding */
             text-align: left;
         }
         .header img {
