@@ -14,7 +14,7 @@ st.markdown(
     """
     <style>
 
-       .stBaseButton-secondary{
+       .class="st-emotion-cache-1igbibe{
        background-color: green;
        }
     
