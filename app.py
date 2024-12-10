@@ -23,6 +23,7 @@ st.markdown(
     }
     .st-emotion-cache-1wmy9hl{
     position:fixed;
+    width: 600px;
     
     }
     .gdg-s1dgczr6{
