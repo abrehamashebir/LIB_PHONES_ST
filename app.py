@@ -15,6 +15,7 @@ st.markdown(
     <style>
     .stFileUploader {
     top:50px;
+    position:fixed;
     }
     .stMain {
     position:fixed;
