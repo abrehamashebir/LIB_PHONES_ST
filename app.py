@@ -12,6 +12,34 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 # --- Style ---
 st.markdown(
     """
+    # .dvn-scroller{
+    # top: 300px;
+    # }
+    
+    .st-emotion-cache-1wmy9hl {
+    position:fixed;
+    width:1600px;
+    height:500px;
+    }
+    # .gdg-s1dgczr6{
+    # width:900px;
+    # background-color:blue
+
+    # }
+    # .st-emotion-cache-1wmy9hl{
+    # position:fixed;
+    # width:900px;
+    
+    # }
+    # .gdg-s1dgczr6{
+    # position:fixed;
+    # top: 270px
+    
+    # }
+    # .stFileUploader  {
+    # position:fixed;
+    # }
+
     <style>
     .gdg-s1dgczr6{
     width: 300px;
@@ -123,13 +151,7 @@ except Exception as e:
 
 
 # --- Content ---
-st.markdown(
-    """  
-    <div class="content">
-        <p class="nb">NB. : ፋይል አፕሎድ(Upload) ከማድረግዎ በፊት የስልክ ቁጥር የያዘውን አምድ(Column) ወደ phone ቀይረው ሴቭ(Save) ማድረግዎን እንዳይረሱ።:</p>
-        """,
-    unsafe_allow_html=True,
-)
+
 
 
 uploaded_file = st.file_uploader("Choose an Excel (.xlsx, .xls) or CSV (.csv) file", type=["xlsx", "xls", "csv"])
