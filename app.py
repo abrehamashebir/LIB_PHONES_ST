@@ -14,6 +14,10 @@ st.markdown(
     """
     <style>
 
+    .dvn-scroller{
+    width:1200px;
+    }
+
        .st-emotion-cache-p0pjm{
        background-color: #008CBA;
        color:white;
