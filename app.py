@@ -18,7 +18,7 @@ st.markdown(
     background-color:blue
 
     }
-    .st-emotion-cache-1wmy9hl e1f1d6gn1{
+    .st-emotion-cache-1wmy9hl{
     position:fixed;
     
     }
