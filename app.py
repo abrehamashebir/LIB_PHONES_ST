@@ -46,9 +46,8 @@ st.markdown(
     .header img {
         margin-bottom: 10px; /* Add bottom margin to separate logo and text */
         height: 50px;         /* Reduce logo size */
-        width: auto;          /* Maintain aspect ratio */
     }
-    .header h1 {
+    .header h2 {
         text-align: center; /* Center the heading */
     }
 
