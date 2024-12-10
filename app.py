@@ -98,7 +98,7 @@ try:
     img_str = base64.b64encode(buffered.getvalue()).decode()
 
     # Create HTML with Base64 encoded image
-    html = f"""
+    html = f""" 
         <div class='banner' style="display: flex; align-items: center; background-color: black;color: white;">
             <img src="data:image/jpeg;base64,{img_str}" alt="Lion International Bank Logo" style="height: 60px;">
             <h2>Lion International Bank</h2>
@@ -115,7 +115,7 @@ except Exception as e:
 
 # --- Content ---
 st.markdown(
-    """
+    """  <br/><br/><br/>
     <div class="content">
         <p class="nb">NB. : ፋይል አፕሎድ(Upload) ከማድረግዎ በፊት የስልክ ቁጥር የያዘውን አምድ(Column) ወደ phone ቀይረው ሴቭ(Save) ማድረግዎን እንዳይረሱ።:</p>
         """,
