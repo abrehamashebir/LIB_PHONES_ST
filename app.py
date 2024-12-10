@@ -37,9 +37,9 @@ st.markdown(
     # top: 270px
     
     # }
-    .stFileUploader  {
-    position:fixed;
-    }
+    # .stFileUploader  {
+    # position:fixed;
+    # }
 
         .header {
             background-color: #00BFFF;
@@ -56,11 +56,14 @@ st.markdown(
         }
         .content {
             background-color: powderblue;
-            padding: 5px;
-             position: fixed;
-             top:30px
-             width:900px;
-        }
+           top: 65px;
+        position: fixed;
+        left: 0;
+        bottom: 5;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        font-size: 14px;
         .nb {
             color: brown;
             margin-bottom: 10px;
