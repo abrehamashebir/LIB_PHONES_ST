@@ -14,9 +14,7 @@ st.markdown(
     """
     <style>
 
-    .dvn-underlay{
-    width:1200px;
-    }
+  
 
        .stElementContainer{
        background-color: #008CBA;
