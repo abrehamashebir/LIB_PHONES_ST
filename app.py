@@ -21,6 +21,7 @@ st.markdown(
     .stMain {
     position:fixed;
     width:auto;
+    height:auto;
     }
     # .gdg-s1dgczr6{
     # width:900px;
