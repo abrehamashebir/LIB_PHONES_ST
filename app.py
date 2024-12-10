@@ -18,7 +18,7 @@ st.markdown(
     # top: 300px;
     # }
     
-    .stMain {
+    .st-emotion-cache-1wmy9hl {
     position:fixed;
     width:1600px;
     height:500px;
