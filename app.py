@@ -53,6 +53,7 @@ st.markdown(
             background-color: powderblue;
             padding: 10px;
              position: relative;
+             width:300px;
         }
         .nb {
             color: brown;
