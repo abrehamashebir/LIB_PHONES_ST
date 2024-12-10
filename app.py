@@ -119,7 +119,8 @@ st.markdown(
     """  <br/><br/><br/>
     <div class="content">
         <p class="nb">NB. : ፋይል አፕሎድ(Upload) ከማድረግዎ በፊት የስልክ ቁጥር የያዘውን አምድ(Column) ወደ phone ቀይረው ሴቭ(Save) ማድረግዎን እንዳይረሱ።:</p>
-        """,
+      <br/><br/><br/>
+          """,
     unsafe_allow_html=True,
 )
 
