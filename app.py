@@ -20,7 +20,7 @@ st.markdown(
     
     .stMain {
     position:fixed;
-    width:900px;
+    width:auto;
     }
     # .gdg-s1dgczr6{
     # width:900px;
