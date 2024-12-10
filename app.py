@@ -161,8 +161,6 @@ if uploaded_file is not None:
         df.dropna(axis=1,inplace=True)
         # df = df[['phone']]
 
-
-        st.success("File processed successfully!")
         st.dataframe(df)     
          # Create an in-memory buffer to store the Excel file
         buffer = io.BytesIO()
