@@ -14,36 +14,33 @@ st.markdown(
     """
     <style>
 
-    .dvn-scroller{
-    top: 300px;
-    }
-    .stFileUploader {
-    top:10px;
-    position:fixed;
-    }
-    .stMain {
-    position:fixed;
-    width:900px;
-    }
-    .gdg-s1dgczr6{
-    width:900px;
-    background-color:blue
+    # .dvn-scroller{
+    # top: 300px;
+    # }
+    
+    # .stMain {
+    # position:fixed;
+    # width:900px;
+    # }
+    # .gdg-s1dgczr6{
+    # width:900px;
+    # background-color:blue
 
-    }
-    .st-emotion-cache-1wmy9hl{
-    position:fixed;
-    width:900px;
+    # }
+    # .st-emotion-cache-1wmy9hl{
+    # position:fixed;
+    # width:900px;
     
-    }
-    .gdg-s1dgczr6{
-    position:fixed;
-    top: 270px
+    # }
+    # .gdg-s1dgczr6{
+    # position:fixed;
+    # top: 270px
     
-    }
-    .stFileUploader  {
-    position:fixed;
-    top: 270px;
-    }
+    # }
+    # .stFileUploader  {
+    # position:fixed;
+    # top: 270px;
+    # }
 
         .header {
             background-color: #00BFFF;
