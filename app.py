@@ -13,34 +13,15 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 st.markdown(
     """
     <style>
+    .gdg-s1dgczr6{
+    width: 300px;
+    background-color:blue
 
-    # .dvn-scroller{
-    # top: 300px;
-    # }
-    
-    .st-emotion-cache-1wmy9hl {
-    position:fixed;
-    width:1600px;
-    height:500px;
     }
-    # .gdg-s1dgczr6{
-    # width:900px;
-    # background-color:blue
-
-    # }
-    # .st-emotion-cache-1wmy9hl{
-    # position:fixed;
-    # width:900px;
-    
-    # }
-    # .gdg-s1dgczr6{
-    # position:fixed;
-    # top: 270px
-    
-    # }
-    # .stFileUploader  {
-    # position:fixed;
-    # }
+    .stFileUploader  {
+    position:fixed;
+    top: 270px;
+    }
 
         .header {
             background-color: #00BFFF;
@@ -56,12 +37,10 @@ st.markdown(
             margin-top: 10px; /*Reduced margin for h1*/
         }
         .content {
-            background-color: lightblue;
-           top: 200px;
-        width: 100%;
-        background-color: #f1f1f1;
-        text-align: center;
-        font-size: 14px;
+            background-color: powderblue;
+            padding: 10px;
+             position: relative;
+        }
         .nb {
             color: brown;
             margin-bottom: 10px;
