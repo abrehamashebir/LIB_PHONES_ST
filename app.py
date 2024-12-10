@@ -18,6 +18,11 @@ st.markdown(
     background-color:blue
 
     }
+    .gdg-s1dgczr6{
+    position:fixed;
+    top: 270px
+    
+    }
     .stFileUploader  {
     position:fixed;
     top: 270px;
