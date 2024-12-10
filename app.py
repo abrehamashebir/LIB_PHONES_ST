@@ -18,7 +18,7 @@ st.markdown(
     background-color:blue
 
     }
-    .stElementContainer {
+    .stFileUploader  {
     position:fixed;
     top: 220px;
     }
