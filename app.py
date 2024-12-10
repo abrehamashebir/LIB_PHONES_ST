@@ -55,6 +55,10 @@ st.markdown(
     .container {
         flex-direction: column; /* Stack items vertically on smaller screens */
         align-items: center;
+        display: flex;
+        align-items: center;
+        width: 100%; /* Full width */
+        box-sizing: border-box;
     }
 }
 
