@@ -14,9 +14,10 @@ st.markdown(
     """
     <style>
 
-    .dvn-scroller stDataFrameGlideData{
-    widith: 100%;
-    }
+    .stElementContainer {
+        
+            position: fixed;
+        }
         .header {
             background-color: #00BFFF;
             color: white;
@@ -36,10 +37,7 @@ st.markdown(
             position: fixed;
             top: 15;
         }
-        .stElementContainer {
         
-            position: fixed;
-        }
         .nb {
             color: brown;
             margin-bottom: 10px;
