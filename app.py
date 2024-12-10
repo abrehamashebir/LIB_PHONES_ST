@@ -46,18 +46,15 @@ st.markdown(
     .header img {
         margin-bottom: 10px; /* Add bottom margin to separate logo and text */
         height: 50px;         /* Reduce logo size */
+        width: auto;          /* Maintain aspect ratio */
     }
-    .header h2 {
+    .header h1 {
         text-align: center; /* Center the heading */
     }
 
     .container {
         flex-direction: column; /* Stack items vertically on smaller screens */
         align-items: center;
-        display: flex;
-        align-items: center;
-        width: 100%; /* Full width */
-        box-sizing: border-box;
     }
 }
 
@@ -90,7 +87,7 @@ try:
 
     # Create HTML with Base64 encoded image
     html = f"""
-        <div style="margin: auto;padding: 5px;display: flex;background-color: black;color: white;">
+        <div style="display: flex; align-items: center; background-color: black;color: white;">
             <img src="data:image/jpeg;base64,{img_str}" alt="Lion International Bank Logo" style="height: 60px;">
             <h2>Lion International Bank</h2>
             <h4>Phone Clearning </h4>
