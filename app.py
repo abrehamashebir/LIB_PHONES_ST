@@ -55,8 +55,8 @@ st.markdown(
             margin-top: 10px; /*Reduced margin for h1*/
         }
         .content {
-            background-color: powderblue;
-           top: 165px;
+            background-color: lightblue;
+           top: 200px;
         position: fixed;
         left: 0;
         bottom: 5;
