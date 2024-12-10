@@ -37,6 +37,7 @@ st.markdown(
             margin-bottom: 10px;
         }
         .banner {
+        top: 10px;
         position: fixed;
         left: 0;
         bottom: 5;
