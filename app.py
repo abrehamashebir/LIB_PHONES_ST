@@ -18,6 +18,10 @@ st.markdown(
     background-color:blue
 
     }
+    .st-emotion-cache-1wmy9hl e1f1d6gn1{
+    position:fixed;
+    
+    }
     .gdg-s1dgczr6{
     position:fixed;
     top: 270px
