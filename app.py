@@ -30,6 +30,8 @@ st.markdown(
         .content {
             background-color: powderblue;
             padding: 20px;
+             position: absolute;
+            top: 0;
         }
         .nb {
             color: brown;
