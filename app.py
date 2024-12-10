@@ -12,33 +12,7 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 # --- Style ---
 st.markdown(
     """
-    # .dvn-scroller{
-    # top: 300px;
-    # }
     
-    .st-emotion-cache-1wmy9hl {
-    position:fixed;
-    width:1600px;
-    height:500px;
-    }
-    # .gdg-s1dgczr6{
-    # width:900px;
-    # background-color:blue
-
-    # }
-    # .st-emotion-cache-1wmy9hl{
-    # position:fixed;
-    # width:900px;
-    
-    # }
-    # .gdg-s1dgczr6{
-    # position:fixed;
-    # top: 270px
-    
-    # }
-    # .stFileUploader  {
-    # position:fixed;
-    # }
 
     <style>
     .gdg-s1dgczr6{
