@@ -17,6 +17,7 @@ st.markdown(
     .stElementContainer {
         
             position: fixed;
+            display: block;
         }
         .header {
             background-color: #00BFFF;
