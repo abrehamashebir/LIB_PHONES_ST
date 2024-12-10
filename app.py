@@ -14,7 +14,7 @@ st.markdown(
     """
     <style>
     .stFileUploader {
-    top:50px;
+    top:10px;
     position:fixed;
     }
     .stMain {
