@@ -128,7 +128,7 @@ st.markdown(
 )
 
 
-uploaded_file = st.file_uploader("Choose an Excel (.xlsx, .xls) or CSV (.csv) file", type=["xlsx", "xls", "csv"])
+uploaded_file = st.file_uploader("Choose an Excel (.xlsx, .xls) or CSV (.csv) file", type=["xlsx", "xls", "csv"], label_visibility='hidden')
 
 if uploaded_file is not None:
     try:
