@@ -14,7 +14,7 @@ st.markdown(
     """
     <style>
 
-    .gdg-s1dgczr6{
+    .dvn-underlay{
     width:1200px;
     }
 
