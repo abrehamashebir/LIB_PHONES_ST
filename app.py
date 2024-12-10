@@ -13,15 +13,9 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 st.markdown(
     """
     <style>
-    .gdg-s1dgczr6{
-    width: 300px;
-    background-color:blue
 
-    }
-    .stFileUploader  {
-    position:fixed;
-    top: 270px;
-    }
+
+    
 
         .header {
             background-color: #00BFFF;
