@@ -40,7 +40,7 @@ st.markdown(
             margin-bottom: 10px;
         }
         .banner {
-        top: 45px;
+        top: 1px;
         position: relative;
         left: 0;
         bottom: 5;
