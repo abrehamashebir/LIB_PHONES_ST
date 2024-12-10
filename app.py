@@ -13,15 +13,10 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 st.markdown(
     """
     <style>
-
-       .stVerticalBlock {
-       width:1600px;
-       }
-    
-
         .header {
-            background-color: #00BFFF;
+            background-color: #333;
             color: white;
+            padding: 5px; /* Reduced padding */
             text-align: left;
         }
         .header img {
@@ -34,56 +29,16 @@ st.markdown(
         }
         .content {
             background-color: powderblue;
-            padding: 10px;
-             position: relative;
+            padding: 20px;
         }
         .nb {
             color: brown;
             margin-bottom: 10px;
         }
-        .banner {
-        top: 1px;
-        position: relative;
-        left: 0;
-        bottom: 5;
-        background-color: #f1f1f1;
-        text-align: center;
-        font-size: 14px;
-    }
         .container {
-        
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Vertically align items */
         }
-        @media (max-width: 767px) {
-    .header {
-        flex-direction: column; /* Stack logo and text vertically */
-        align-items: center;     /* Center items vertically */
-        padding: 5px;
-    }
-    .header img {
-        margin-bottom: 10px; /* Add bottom margin to separate logo and text */
-        height: 50px;         /* Reduce logo size */
-        width: auto;          /* Maintain aspect ratio */
-    }
-    .header h1 {
-        text-align: center; /* Center the heading */
-    }
-
-    .container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center;
-    }
-}
-
-/* Media query for medium screens (e.g., tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .header {
-        padding: 10px;
-    }
-    .header img {
-        height: 50px;
-    }
-}
-
     </style>
     """,
     unsafe_allow_html=True,
