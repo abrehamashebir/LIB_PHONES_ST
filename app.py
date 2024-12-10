@@ -13,6 +13,10 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 st.markdown(
     """
     <style>
+
+    .dvn-scroller{
+    top: 300px;
+    }
     .stFileUploader {
     top:10px;
     position:fixed;
