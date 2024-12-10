@@ -14,12 +14,7 @@ st.markdown(
     """
     <style>
 
-  
-
-       .stElementContainer{
-       background-color: #008CBA;
-       color:white;
-       }
+       
     
 
         .header {
