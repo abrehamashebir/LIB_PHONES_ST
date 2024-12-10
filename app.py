@@ -47,6 +47,7 @@ st.markdown(
         font-size: 14px;
     }
         .container {
+        background-color:#B0C4DE
         }
         @media (max-width: 767px) {
     .header {
