@@ -14,6 +14,11 @@ st.markdown(
     """
     <style>
 
+    .gdg-s1dgczr6{
+    width: 300px;
+    
+    }
+
         .header {
             background-color: #00BFFF;
             color: white;
