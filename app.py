@@ -13,6 +13,9 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 st.markdown(
     """
     <style>
+    .stFileUploader {
+    top:50px;
+    }
     .stMain {
     position:fixed;
     width:900px;
