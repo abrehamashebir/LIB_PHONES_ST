@@ -41,7 +41,7 @@ st.markdown(
         }
         .banner {
         top: 1px;
-        position: absolute;
+        position: relative;
         left: 0;
         bottom: 5;
         width: 100%;
