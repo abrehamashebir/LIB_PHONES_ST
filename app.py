@@ -30,13 +30,6 @@ st.markdown(
         .content {
             background-color: powderblue;
             padding: 20px;
-            padding: 15px;
-            
-        position: fixed;
-        left: 0;
-        width: 100%;
-        background-color: #f1f1f1;
-        padding: 10px;
         }
         .nb {
             color: brown;
@@ -45,9 +38,12 @@ st.markdown(
         .banner {
         position: fixed;
         left: 0;
+        bottom: 5;
         width: 100%;
         background-color: #f1f1f1;
+        text-align: center;
         padding: 10px;
+        font-size: 14px;
     }
         .container {
         }
