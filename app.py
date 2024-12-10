@@ -14,7 +14,9 @@ st.markdown(
     """
     <style>
 
-       
+       .stVerticalBlock {
+       width:1600px;
+       }
     
 
         .header {
