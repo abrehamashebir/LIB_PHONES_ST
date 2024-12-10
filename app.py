@@ -14,7 +14,7 @@ st.markdown(
     """
     <style>
 
-    .dvn-stack{
+    .gdg-s1dgczr6{
     width:1200px;
     }
 
