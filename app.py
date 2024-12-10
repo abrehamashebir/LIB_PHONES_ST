@@ -13,6 +13,12 @@ st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=Non
 st.markdown(
     """
     <style>
+    *, ::before, ::after {
+    /* box-sizing: border-box;
+    }
+    .dvn-scroller stDataFrameGlideData{
+    position: fixed;
+    }
         .header {
             background-color: #00BFFF;
             color: white;
