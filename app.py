@@ -18,10 +18,10 @@ st.markdown(
     # top: 300px;
     # }
     
-    # .stMain {
-    # position:fixed;
-    # width:900px;
-    # }
+    .stMain {
+    position:fixed;
+    width:900px;
+    }
     # .gdg-s1dgczr6{
     # width:900px;
     # background-color:blue
