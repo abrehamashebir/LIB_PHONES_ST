@@ -18,7 +18,7 @@ st.markdown(
     width:1200px;
     }
 
-       .st-emotion-cache-p0pjm{
+       .stElementContainer{
        background-color: #008CBA;
        color:white;
        }
