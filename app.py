@@ -20,8 +20,8 @@ st.markdown(
     
     .stMain {
     position:fixed;
-    width:auto;
-    height:auto;
+    width:1600px;
+    height:500px;
     }
     # .gdg-s1dgczr6{
     # width:900px;
