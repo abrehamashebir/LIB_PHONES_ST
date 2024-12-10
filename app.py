@@ -14,7 +14,7 @@ st.markdown(
     """
     <style>
 
-    .dvn-scroller{
+    .dvn-stack{
     width:1200px;
     }
 
