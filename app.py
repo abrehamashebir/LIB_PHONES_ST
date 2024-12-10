@@ -15,7 +15,8 @@ st.markdown(
     <style>
 
        .st-emotion-cache-p0pjm{
-       background-color: green;
+       background-color: #008CBA;
+       color:white;
        }
     
 
