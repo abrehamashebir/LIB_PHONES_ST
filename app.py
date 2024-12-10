@@ -7,7 +7,7 @@ import tempfile
 from PIL import Image
 import base64
 import io
-st.set_page_config(page_title='LIB Customer Phone', layout='wide')
+st.set_page_config(page_title='LIB Customer Phone', layout='wide',menu_items=None)
 
 # --- Style ---
 st.markdown(
@@ -157,7 +157,7 @@ if uploaded_file is not None:
         # df = df[['phone']]
 
 
-        st.success("File processed successfully!")
+        # st.success("File processed successfully!")
         st.dataframe(df)     
          # Create an in-memory buffer to store the Excel file
         buffer = io.BytesIO()
