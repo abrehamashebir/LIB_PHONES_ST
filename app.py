@@ -20,7 +20,7 @@ st.markdown(
     }
     .stFileUploader  {
     position:fixed;
-    top: 220px;
+    top: 270px;
     }
 
         .header {
