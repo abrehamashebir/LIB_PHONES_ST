@@ -58,8 +58,6 @@ st.markdown(
             background-color: lightblue;
            top: 200px;
         position: fixed;
-        left: 0;
-        bottom: 5;
         width: 100%;
         background-color: #f1f1f1;
         text-align: center;
