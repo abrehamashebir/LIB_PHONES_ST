@@ -29,13 +29,11 @@ st.markdown(
         .content {
             background-color: powderblue;
             padding: 20px;
-             position: fixed;
             top: 15;
         }
         .nb {
             color: brown;
             margin-bottom: 10px;
-            position: fixed;
         }
         .banner {
         position: fixed;
@@ -119,8 +117,7 @@ st.markdown(
     """  <br/><br/><br/>
     <div class="content">
         <p class="nb">NB. : ፋይል አፕሎድ(Upload) ከማድረግዎ በፊት የስልክ ቁጥር የያዘውን አምድ(Column) ወደ phone ቀይረው ሴቭ(Save) ማድረግዎን እንዳይረሱ።:</p>
-      <br/><br/><br/>
-          """,
+        """,
     unsafe_allow_html=True,
 )
 
