@@ -20,7 +20,7 @@ st.markdown(
     }
     .stElementContainer {
     position:fixed;
-    top: 110px;
+    top: 170px;
     }
 
         .header {
