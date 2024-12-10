@@ -44,6 +44,10 @@ st.markdown(
         padding: 10px;
         font-size: 14px;
     }
+    .gdg-s1dgczr6 .dvn-scroller {
+    overflow: var(--s1dgczr6-0);
+    transform: translateZ(0);
+}
         .container {
         background-color:#B0C4DE;    
             display: flex; /* Use flexbox for alignment */
