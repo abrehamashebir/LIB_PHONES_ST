@@ -29,9 +29,8 @@ st.markdown(
         }
         .content {
             background-color: powderblue;
-            padding: 20px;
+            padding: 10px;
              position: relative;
-            top: 15;
         }
         .nb {
             color: brown;
