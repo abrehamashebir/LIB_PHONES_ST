@@ -16,7 +16,8 @@ st.markdown(
 
     .gdg-s1dgczr6{
     width: 300px;
-    
+    background-color:blue
+
     }
 
         .header {
