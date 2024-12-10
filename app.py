@@ -199,6 +199,7 @@ st.markdown(
         text-align: center;
         padding: 5px;
         font-size: 3px;
+        height:30px
     }
     </style>
     <div class="footer">
