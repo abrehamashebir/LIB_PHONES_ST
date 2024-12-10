@@ -56,7 +56,7 @@ st.markdown(
         }
         .content {
             background-color: powderblue;
-            padding: 10px;
+            padding: 5px;
              position: fixed;
              top:30px
              width:900px;
