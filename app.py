@@ -35,6 +35,7 @@ st.markdown(
         .nb {
             color: brown;
             margin-bottom: 10px;
+            position: fixed;
         }
         .banner {
         position: fixed;
