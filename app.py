@@ -99,7 +99,7 @@ try:
 
     # Create HTML with Base64 encoded image
     html = f""" 
-        <div class='banner' style="display: flex; align-items: center; background-color: black;color: white;">
+        <div class='banner' style="display: flex; align-items: center; background-color: #00BFFF;color: white;">
             <img src="data:image/jpeg;base64,{img_str}" alt="Lion International Bank Logo" style="height: 60px;">
             <h2>Lion International Bank</h2>
             <h4>Phone Clearning </h4>
