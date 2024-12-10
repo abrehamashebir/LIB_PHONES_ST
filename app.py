@@ -58,6 +58,7 @@ st.markdown(
             background-color: powderblue;
             padding: 10px;
              position: fixed;
+             top:30px
              width:900px;
         }
         .nb {
