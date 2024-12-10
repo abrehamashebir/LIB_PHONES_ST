@@ -14,7 +14,7 @@ st.markdown(
     """
     <style>
         .header {
-            background-color: #333;
+            background-color: #00BFFF;
             color: white;
             padding: 1px; /* Reduced padding */
             text-align: left;
@@ -198,8 +198,8 @@ st.markdown(
         width: 100%;
         background-color: #f1f1f1;
         text-align: center;
-        padding: 10px;
-        font-size: 14px;
+        padding: 5px;
+        font-size: 3px;
     }
     </style>
     <div class="footer">
