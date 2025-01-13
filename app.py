@@ -114,6 +114,7 @@ if uploaded_file is not None:
         df = df.drop_duplicates(subset=['phone'])
         df.dropna(axis=1,inplace=True)
         # df = df[['phone']]
+        df.to_excel(r'C:\Users\Abreham\Documents\AIM2\AIM_Week_3\Customer_Phone/phone.xlsx')
 
 
         # st.success("File processed successfully!")
