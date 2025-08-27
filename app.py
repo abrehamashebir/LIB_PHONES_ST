@@ -98,6 +98,10 @@ if uploaded_file is not None:
         df['phone'] = df['phone'].astype(str)
         df['phone'] = df['phone'].str.split('/')
         df = df.explode('phone')
+        df['phone'] = df['phone'].str.split('&')
+        df = df.explode('phone')
+        df['phone'] = df['phone'].str.split('or')
+        df = df.explode('phone')
         df['phone'] = df['phone'].str.replace('251', '0', 1)
 
         df['phone'] = df['phone'].str.split('.').str[0]
@@ -170,5 +174,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 
     
