@@ -157,7 +157,7 @@ if uploaded_file is not None:
             st.stop()
         
         # Show original columns
-        st.info(f"File loaded successfully! Columns found: {list(df.columns)}")
+        # st.info(f"File loaded successfully! Columns found: {list(df.columns)}")
         
         # Find phone columns
         phone_cols = find_phone_column(df)
@@ -169,12 +169,12 @@ if uploaded_file is not None:
             phone_cols = [selected_col]
         elif len(phone_cols) > 1:
             # If multiple phone columns found, let user choose
-            st.warning(f"Multiple phone columns detected: {phone_cols}")
+            # st.warning(f"Multiple phone columns detected: {phone_cols}")
             selected_col = st.selectbox("Select which column to clean:", phone_cols)
             phone_cols = [selected_col]
-        else:
+        # else:
             # Single phone column found
-            st.success(f"Phone column detected: '{phone_cols[0]}'")
+            # st.success(f"Phone column detected: '{phone_cols[0]}'")
         
         # Process the selected phone column
         phone_col = phone_cols[0]
