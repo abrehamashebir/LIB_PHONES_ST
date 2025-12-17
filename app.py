@@ -108,6 +108,21 @@ def extract_phone_column(df, phone_col):
     
     return df
 
+def remove_unnamed_columns(df):
+    """
+    Remove only columns that start with 'Unnamed'
+    but keep all other columns including empty ones
+    """
+    # Identify columns that start with 'Unnamed'
+    unnamed_cols = [col for col in df.columns if str(col).startswith('Unnamed')]
+    
+    if unnamed_cols:
+        # Remove only the Unnamed columns
+        df = df.drop(columns=unnamed_cols)
+        st.info(f"Removed {len(unnamed_cols)} 'Unnamed' columns: {unnamed_cols}")
+    
+    return df
+
 # --- Header ---
 try:
     logo_path = "images/images.jpg"  # Make sure this path is correct.
@@ -156,8 +171,14 @@ if uploaded_file is not None:
             st.error("Unsupported file type. Please upload XLS, XLSX, or CSV.")
             st.stop()
         
-        # Show original columns
-        # st.info(f"File loaded successfully! Columns found: {list(df.columns)}")
+        # Show original columns before removing Unnamed columns
+        st.info(f"Original columns: {list(df.columns)}")
+        
+        # Remove only Unnamed columns (keep all other columns)
+        df = remove_unnamed_columns(df)
+        
+        # Show columns after removing Unnamed
+        st.info(f"Columns after removing 'Unnamed': {list(df.columns)}")
         
         # Find phone columns
         phone_cols = find_phone_column(df)
@@ -169,12 +190,12 @@ if uploaded_file is not None:
             phone_cols = [selected_col]
         elif len(phone_cols) > 1:
             # If multiple phone columns found, let user choose
-            # st.warning(f"Multiple phone columns detected: {phone_cols}")
+            st.warning(f"Multiple phone columns detected: {phone_cols}")
             selected_col = st.selectbox("Select which column to clean:", phone_cols)
             phone_cols = [selected_col]
-        # else:
+        else:
             # Single phone column found
-            # st.success(f"Phone column detected: '{phone_cols[0]}'")
+            st.success(f"Phone column detected: '{phone_cols[0]}'")
         
         # Process the selected phone column
         phone_col = phone_cols[0]
@@ -183,11 +204,12 @@ if uploaded_file is not None:
         # Extract and clean phone numbers
         df = extract_phone_column(df, phone_col)
         
-        # Remove duplicates
+        # Remove duplicates based on phone column only
         df = df.drop_duplicates(subset=[phone_col])
         
-        # Remove empty columns
-        df.dropna(axis=1, how='all', inplace=True)
+        # DO NOT remove empty columns here - keep all columns
+        # Only remove completely empty rows if needed
+        df = df.dropna(how='all')
         
         # Show statistics
         st.success(f"""
@@ -196,10 +218,18 @@ if uploaded_file is not None:
         - Cleaned rows: {len(df)}
         - Removed duplicates: {original_row_count - len(df)}
         - Phone column used: '{phone_col}'
+        - Total columns kept: {len(df.columns)}
         """)
         
-        # Display the cleaned dataframe
+        # Display the cleaned dataframe with all columns
         st.dataframe(df.head(100))  # Show first 100 rows
+        
+        # Show column summary
+        with st.expander("📋 Column Summary"):
+            for col in df.columns:
+                non_null = df[col].notna().sum()
+                null_count = df[col].isna().sum()
+                st.write(f"**{col}**: {non_null} non-null, {null_count} null")
         
         # Create download buttons
         col1, col2 = st.columns(2)
@@ -230,13 +260,18 @@ if uploaded_file is not None:
                 use_container_width=True
             )
         
-        # Show column information
-        with st.expander("📊 Data Information"):
+        # Show detailed column information
+        with st.expander("📊 Detailed Data Information"):
             st.write(f"**Total rows:** {len(df)}")
             st.write(f"**Total columns:** {len(df.columns)}")
-            st.write("**Columns:**", list(df.columns))
-            st.write(f"**Sample phone numbers:**")
+            st.write("**All columns:**", list(df.columns))
+            st.write(f"**Phone column:** '{phone_col}'")
+            st.write(f"**Sample phone numbers from '{phone_col}':**")
             st.write(df[phone_col].head(10).tolist())
+            
+            # Show data types
+            st.write("**Data types:**")
+            st.write(df.dtypes)
 
     except Exception as e:
         st.error(f"Error processing file: {str(e)}")
@@ -254,8 +289,8 @@ st.markdown(
         background-color: #f1f1f1;
         text-align: center;
         padding: 5px;
-        font-size: 3px;
-        height:30px
+        font-size: 12px;
+        height: 30px
     }
     </style>
     <div class="footer">
