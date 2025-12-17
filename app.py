@@ -119,7 +119,7 @@ def remove_unnamed_columns(df):
     if unnamed_cols:
         # Remove only the Unnamed columns
         df = df.drop(columns=unnamed_cols)
-        st.info(f"Removed {len(unnamed_cols)} 'Unnamed' columns: {unnamed_cols}")
+        # st.info(f"Removed {len(unnamed_cols)} 'Unnamed' columns: {unnamed_cols}")
     
     return df
 
@@ -172,13 +172,13 @@ if uploaded_file is not None:
             st.stop()
         
         # Show original columns before removing Unnamed columns
-        st.info(f"Original columns: {list(df.columns)}")
+        # st.info(f"Original columns: {list(df.columns)}")
         
         # Remove only Unnamed columns (keep all other columns)
         df = remove_unnamed_columns(df)
         
         # Show columns after removing Unnamed
-        st.info(f"Columns after removing 'Unnamed': {list(df.columns)}")
+        # st.info(f"Columns after removing 'Unnamed': {list(df.columns)}")
         
         # Find phone columns
         phone_cols = find_phone_column(df)
@@ -193,9 +193,9 @@ if uploaded_file is not None:
             st.warning(f"Multiple phone columns detected: {phone_cols}")
             selected_col = st.selectbox("Select which column to clean:", phone_cols)
             phone_cols = [selected_col]
-        else:
+        # else:
             # Single phone column found
-            st.success(f"Phone column detected: '{phone_cols[0]}'")
+            # st.success(f"Phone column detected: '{phone_cols[0]}'")
         
         # Process the selected phone column
         phone_col = phone_cols[0]
@@ -225,12 +225,7 @@ if uploaded_file is not None:
         st.dataframe(df.head(100))  # Show first 100 rows
         
         # Show column summary
-        with st.expander("📋 Column Summary"):
-            for col in df.columns:
-                non_null = df[col].notna().sum()
-                null_count = df[col].isna().sum()
-                st.write(f"**{col}**: {non_null} non-null, {null_count} null")
-        
+             
         # Create download buttons
         col1, col2 = st.columns(2)
         
